@@ -30,24 +30,37 @@ Para cada caso de teste da entrada seu programa deve imprimir uma linha, cada um
 um número inteiro, indicando o número de minutos que Daniela tem para dormir.
 */
 
+/*ulizando o scanner porque os valores de entrada são em uma unica linha, 
+e essa foi a forma que achei pra ler os valores assim. Usamos o IO.readln, 
+mas assim a entrada seria dada em 4 linhas.*/
+import java.util.Scanner; 
+
 void main(){
 
-    int h1, m1, h2, m2;
-    h1 = IO.read();
-    m1 = IO.read();
-    h2 = IO.read();
-    m2 = IO.read();
+    Scanner sc = new Scanner(System.in);
 
-    while(h1!=0 && m1!=0 && h2!=0 && m2!=0){
+    int h1=1, m1=1, h2=1, m2=1;
+    h1 = sc.nextInt();
+    m1 = sc.nextInt();
+    h2 = sc.nextInt();
+    m2 = sc.nextInt();
+
+    while(h1!=0 || m1!=0 || h2!=0 || m2!=0){
 
 
-        h1 *= 60;
-        h2 *= 60;
+        if(h1 > h2 || (h1 == h2 && m1 > m2) || (h1 == h2 && m1 == m2)){
+            h2 += 24;
+        }
 
-        int tempo = 0;
+        int t1 = h1*60 + m1;
+        int t2 = h2*60 + m2;
 
-        System.out.println(tempo);
+        System.out.println(t2-t1);
+
+        h1 = sc.nextInt();
+        m1 = sc.nextInt();
+        h2 = sc.nextInt();
+        m2 = sc.nextInt();
 
     }
-
 }
