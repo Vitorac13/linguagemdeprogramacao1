@@ -17,5 +17,14 @@ public class Livro{
         this.editora = editora;
         this.genero = genero;
         this.quantidade++;
-    }    
+    }
+
+    public Livro(String titulo){
+        this.titulo = titulo;
+    }
+
+    public String getTitulo(){
+        return titulo;
+    }
+
 }
