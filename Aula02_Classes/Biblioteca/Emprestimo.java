@@ -1,3 +1,5 @@
+package Biblioteca;
+
 class Emprestimo{
     private int id_emprestimo;
     private int id_usuario;
