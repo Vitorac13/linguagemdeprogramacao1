@@ -18,6 +18,7 @@ Restaurante - Classes: Cliente, Pedido, Item_pedido, Garçom, Mesa
 (1) Pedido - Mesa (1)           associação
 
 Lucid Chart - https://lucid.co/
+DrawIO - https://www.drawio.com/
 Astah - https://astah.net/
 
 Universidade - Classes: Curso, Professor, Aluno, Disciplina, Oferta_disciplina
