@@ -1,0 +1,28 @@
+UML - Unified Modeling Language
++ publico
+- privado
+# protegido
+~ pacote
+Diamante - associação
+Diamante pintado - composição
+
+Cardinalidade(1:1, 1:N ou N:1 ou 0..*, N:M)
+herança - associação - agregação - composição
+
+Semântico tipo?
+
+Restaurante - Classes: Cliente, Pedido, Item_pedido, Garçom, Mesa
+(1) Cliente - Pedido (*)        associação
+(*) Pedido - Item_pedido (*)    composição
+(*) Garçom - Mesa (*)           associação
+(1) Pedido - Mesa (1)           associação
+
+Lucid Chart - https://lucid.co/
+Astah - https://astah.net/
+
+Universidade - Classes: Curso, Professor, Aluno, Disciplina, Oferta_disciplina
+(1) Curso - Disciplina (*)              composição
+(1) Professor - Oferta_disciplina (*)   associação
+(*) Aluno - Oferta_disciplina (*)       associação
+(*) Disciplina - Oferta_disciplina (*)  associação
+
