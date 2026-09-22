@@ -1,0 +1,4 @@
+javac arquivo.java -d bin       //-d directory
+java -cp bin            //-cp classpath
+
+build
