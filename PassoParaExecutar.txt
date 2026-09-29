@@ -1,4 +1,13 @@
+javac -d bin/ src/mains/br/com/app/App.java // Compila o programa e o .class vai para pasta bin
+
 javac arquivo.java -d bin       //-d directory
+
 java -cp bin            //-cp classpath
+java -cp bin/ App       // Vai para o diretorio onde esta o programa que quero executar
 
 build
+
+
+Fatorial:
+javac -d bin/ src/main/br/com/fatorial/Fatorial.java
+java -cp bin/ br.com.fatorial.Fatorial
