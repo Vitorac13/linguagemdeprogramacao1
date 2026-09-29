@@ -21,7 +21,6 @@ class Recursividade{
         return fat;
     }
     public int fatorialRec(int num){
-        fat = 1;
         if(num == 0) return 1;
         return num * fatorialRec(num-1);
     }
