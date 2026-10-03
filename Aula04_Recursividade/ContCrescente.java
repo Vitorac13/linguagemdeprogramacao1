@@ -1,12 +1,3 @@
-/* 1. Contagem crescente ★
-Objetivo: Compreender caso base e chamada recursiva.
-Pré-requisitos: Variáveis, métodos e saída no console.
-Dica gradual: Comece pensando no que deve acontecer quando n for o menor valor válido. Depois
-pergunte: o que precisa mudar para chegar ao próximo número?
-Enunciado: Implemente “void contar(int n)” para imprimir os números de 1 até n. */
-
-package br.com.contCrescente;
-
 public class ContCrescente {
     
     public static void main(String[] args){
