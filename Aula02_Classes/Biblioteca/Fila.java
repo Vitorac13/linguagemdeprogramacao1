@@ -1,6 +1,6 @@
 package Biblioteca;
 
-class Fila(int id_fila, int id_usuario, int id_livro){
+public class Fila(int id_fila, int id_usuario, int id_livro){
     private int id_fila;
     private int id_usuario;
     private int id_livro;
