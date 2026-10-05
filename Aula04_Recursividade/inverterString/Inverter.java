@@ -2,17 +2,9 @@ public class Inverter{
 
     public static void main(String[] args) {
 
-        //String nome = "Claudio";
-        //inverter(nome, nome.length());
         inverterSub("Vitor");
 
     }
-
-    /*static void inverter(String nome, int tamanho){
-        if(tamanho == 0) return;
-        System.out.println(nome.charAt(tamanho-1));
-        inverter(nome, tamanho-1);
-    }*/
 
     static void inverterSub(String nome){
         if(nome.length() == 0) return;
