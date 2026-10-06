@@ -1,5 +1,5 @@
 // Uma interface define um comportamento
-public interface ComportamentoAnimal {
+interface ComportamentoAnimal {
     void comer();
     void dormir();
 }
