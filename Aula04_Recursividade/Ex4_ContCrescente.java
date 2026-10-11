@@ -1,4 +1,10 @@
-public class ContCrescente {
+/*4. Contagem crescente com estado ★
+Objetivo: Entender parâmetros que representam o estado atual.
+Pré-requisitos: Métodos, parâmetros e condicionais.
+Dica gradual: Use dois parâmetros: um representa onde você está e outro onde deve chegar.
+Enunciado: Implemente “void contarCrescente(int atual, int limite)”. */
+
+public class Ex4_ContCrescente {
     
     public static void main(String[] args){
 

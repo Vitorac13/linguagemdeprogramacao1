@@ -1,19 +1,34 @@
+package Aula05_Heranca.pagamento;
+
+import java.time.LocalDateTime;
+
 public class Pagamento{
 
     protected double valor;
-    protected String vendedor;
-    protected String cliente;
+    protected LocalDateTime horaPagamento;
+    protected String status;
 
-    public double getValor(){
+    public Pagamento(double valor, LocalDateTime horaPagamento) {
+        this.valor = valor;
+        this.horaPagamento = horaPagamento;
+        this.status = "PENDENTE";
+    }
+
+    public void realizarPagamento() {
+        this.status = "PAGO";
+        System.out.println("Pagamento realizado com sucesso!");
+    }
+
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(double valor){
-        this.valor = valor;
+    public LocalDateTime getHoraPagamento() {
+        return horaPagamento;
     }
 
-    public void pagar(valor){
-        System.out.print(cliente + " está pagando " + valor + " ao " + vendedor);
+    public String getStatus() {
+        return status;
     }
 
 }

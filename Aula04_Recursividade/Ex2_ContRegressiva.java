@@ -1,4 +1,10 @@
-public class ContRegressiva{
+/*2. Contagem regressiva ★
+Objetivo: Perceber que a posição da chamada recursiva influencia a saída.
+Pré-requisitos: Métodos e condicionais.
+Dica gradual: Compare mentalmente uma chamada antes e depois do “println”.
+Enunciado: Implemente “void contagemRegressiva(int n)” para imprimir n até 1. */
+
+public class Ex2_ContRegressiva{
 
     public static void main(String[] args) {
         Recursividade rec = new Recursividade();

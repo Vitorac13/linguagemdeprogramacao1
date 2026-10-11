@@ -1,4 +1,10 @@
-public class ContRegressivaZero{
+/*3. Contagem regressiva com zero ★
+Objetivo: Aprimorar a identificação do caso base.
+Pré-requisitos: Condicionais e métodos.
+Dica gradual: O zero deve ser impresso? Decida primeiro qual é a condição de parada.
+Enunciado: Modifique a contagem regressiva para terminar em 0. */
+
+public class Ex3_ContRegressivaZero{
 
     public static void main(String[] args) {
         Recursividade rec = new Recursividade();

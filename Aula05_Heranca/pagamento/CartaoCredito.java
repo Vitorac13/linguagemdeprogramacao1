@@ -1,17 +1,17 @@
-public class CartaoCredito extends Pagamento{
+package Aula05_Heranca.pagamento;
 
+import java.time.LocalDateTime;
+
+public class CartaoCredito extends Pagamento {
+
+    private String numeroCartao;
+    private String nomeTitular;
     private int parcelas;
-    private double limite;
 
-    public CartaoCredito(double limite){
-        
+    public CartaoCredito(double valor, LocalDateTime horaPagamento, String numeroCartao, String nomeTitular, int parcelas) {
+        super(valor, horaPagamento);
+        this.numeroCartao = numeroCartao;
+        this.nomeTitular = nomeTitular;
+        this.parcelas = parcelas;
     }
-
-    public void passarCartao(double valor, int parcelas){
-
-        System.out.println("Pagamento em " + parcelas + " de " + valor/parcelas);
-        pagar(valor);
-
-    }
-
 }

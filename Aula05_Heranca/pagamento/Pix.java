@@ -1,16 +1,15 @@
-public class Pix extends Pagamento{
+package Aula05_Heranca.pagamento;
 
-    private double saldo;
+import java.time.LocalDateTime;
 
-    public Pix(double saldo){
-        
+public class Pix extends Pagamento {
+
+    private String chavePix;
+    private String tipoChave;
+
+    public Pix(double valor, LocalDateTime horaPagamento, String chavePix, String tipoChave) {
+        super(valor, horaPagamento);
+        this.chavePix = chavePix;
+        this.tipoChave = tipoChave;
     }
-
-    public void passarCartao(double valor, int parcelas){
-
-        System.out.println("Pagamento em " + parcelas + " de " + valor/parcelas);
-        pagar(valor);
-
-    }
-
 }
