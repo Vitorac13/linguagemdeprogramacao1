@@ -1,14 +1,12 @@
 package Aula05_Heranca.pagamento;
 
-import java.time.LocalDateTime;
-
 public class Pix extends Pagamento {
 
     private String chavePix;
     private String tipoChave;
 
-    public Pix(double valor, LocalDateTime horaPagamento, String chavePix, String tipoChave) {
-        super(valor, horaPagamento);
+    public Pix(double valor, String chavePix, String tipoChave) {
+        super(valor);
         this.chavePix = chavePix;
         this.tipoChave = tipoChave;
     }
