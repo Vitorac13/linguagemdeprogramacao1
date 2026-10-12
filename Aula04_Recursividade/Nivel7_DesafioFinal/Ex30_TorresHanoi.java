@@ -11,8 +11,10 @@ public class Ex30_TorresHanoi {
         int quantidadeDiscos = 3;
         System.out.println("Movimentos para resolver as Torres de Hanói com " + quantidadeDiscos + " discos:");
         hanoi(quantidadeDiscos, 'A', 'C', 'B');
+        System.out.println("Quantidade total de movimentos: " + quantidadeMovimentos(quantidadeDiscos));
     }
-    public static void hanoi(int quantidadeDiscos, char origem, char destino, char auxiliar) {
+
+    static void hanoi(int quantidadeDiscos, char origem, char destino, char auxiliar) {
         if (quantidadeDiscos == 1) {
             System.out.println("Mover disco 1 de " + origem + " para " + destino);
             return;
@@ -21,5 +23,12 @@ public class Ex30_TorresHanoi {
         hanoi(quantidadeDiscos - 1, origem, auxiliar, destino);
         System.out.println("Mover disco " + quantidadeDiscos + " de " + origem + " para " + destino);
         hanoi(quantidadeDiscos - 1, auxiliar, destino, origem);
+    }
+
+    static long quantidadeMovimentos(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        return 2 * quantidadeMovimentos(n - 1) + 1;
     }
 }

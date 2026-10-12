@@ -19,7 +19,7 @@ public class Ex29_BuscaBinariaRecursiva {
         }
     }
 
-    public static int buscaBinaria(int[] valores, int inicio, int fim, int procurado) {
+    static int buscaBinaria(int[] valores, int inicio, int fim, int procurado) {
         if (inicio > fim) {
             return -1;
         }
