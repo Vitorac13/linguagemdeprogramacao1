@@ -17,6 +17,10 @@ public class ContaBancaria {
         saldo = 0;
     }
 
+    public String getNumConta(){
+        return numConta;
+    }
+
     public String getNomeCorrentista() {
         return nomeCorrentista;
     }
